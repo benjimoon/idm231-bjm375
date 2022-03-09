@@ -1,0 +1,126 @@
+:root {
+    --background-color: white;
+    --bg-two: #0D1F2D;
+    --bg-three: #546A7B;
+    --padding-avg: 4rem;
+}
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--background-color);
+}
+@font-face {
+    font-family: 'rubik';
+    src: url('../fonts/Rubik-Black.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'lexend';
+    src: url('../fonts/LexendDeca-VariableFont_wght.woff2') format('woff2');
+}
+.title {
+    color: var(--bg-two);
+    text-align: center;
+    padding: .5rem;
+    font-family: 'rubik';
+    font-size: 2.5rem;
+}
+.title_desc {
+    color: var(--bg-three);
+    text-align: center;
+    font-family: 'lexend';
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.title_stuff {
+    grid-area: s;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". s ."
+    ". p ."
+    "j t c"
+    "a k l"
+    "u o m"
+    "d n e"
+}
+.jcole {
+    grid-area: j;
+}
+.tyler {
+    grid-area: t;
+}
+.chance {
+    grid-area: c;
+}
+.travis {
+    grid-area: a;
+}
+.kanye {
+    grid-area: k;
+}
+.post {
+    grid-area: l;
+}
+.uzi {
+    grid-area: u;
+}
+.carti {
+    grid-area: o;
+}
+.rocky {
+    grid-area: m;
+}
+.drake {
+    grid-area: d;
+}
+.nicki {
+    grid-area: n;
+}
+.mac {
+    grid-area: e;
+}
+.birthday {
+display: block;
+grid-area: p;
+place-self: stretch;
+font-family: 'rubik';
+color: var(--bg-two);
+}
+.box img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.box {
+    padding: 2rem;
+}
+.sign {
+    text-align: center;
+    font-family: 'lexend';
+    padding: 1rem;
+}
+.js-date-input {
+    font-family: 'lexend';
+    color: var(--bg-two);
+}
+.js-submit-button {
+    font-family: 'lexend';
+    color: white;
+    background:var(--bg-two);
+    border-radius: 5px;
+    padding: .3rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
