@@ -1,11 +1,13 @@
 const submitButton = document.querySelector(".js-submit-button");
 const divElement = document.querySelector("[data-content-area]");
+const closeButton = document.querySelector("close-card");
 /*
 submitButton.addEventListener("click", function () { 
     const submitButtonContent = document.querySelector(".jcole-card");
     submitButtonContent.classList.toggle("hidden");
   });
   */
+
 submitButton.addEventListener("click", function (event) {
     event.preventDefault();
     const dateInput = document.querySelector(".js-date-input");
@@ -145,47 +147,54 @@ function getYourSign(month, day, year) {
         yourSign = "Pisces"
     }
 
-    var rapper;
+    let rapper;
+
     if (yourSign == "Aquarius") {
-        rapper = document.querySelector(".jcole-card");
+        rapper = document.getElementById("jcole");
     }
     else if (yourSign == "Pisces") {
-        rapper = document.querySelector(".tyler-card");
+        rapper = document.getElementById("tyler");
     }
     else if (yourSign == "Aries") {
-        rapper = document.querySelector(".chance-card");
+        rapper = document.getElementById("chance");
     }
     else if (yourSign == "Taurus") {
-        rapper = document.querySelector(".travis-card");
+        rapper = document.getElementById("travis");
     }
     else if (yourSign == "Gemini") {
-        rapper = document.querySelector(".kanye-card");
+        rapper = document.getElementById("kanye");
     }
     else if (yourSign == "Cancer") {
         rapper = document.getElementById("post");
-        console.log(rapper);
     }
     else if (yourSign == "Leo") {
-        rapper = document.querySelector(".uzi-card");
+        rapper = document.getElementById("uzi");
     }
     else if (yourSign == "Virgo") {
-        rapper = document.querySelector(".carti-card");
+        rapper = document.getElementById("carti");
     }
     else if (yourSign == "Libra") {
-        rapper = document.querySelector(".rocky-card");
+        rapper = document.getElementById("rocky");
     }
     else if (yourSign == "Scorpio") {
-        rapper = document.querySelector(".drake-card");
+        rapper = document.getElementById("drake");
     }
     else if (yourSign == "Sagittarius") {
-        rapper = document.querySelector(".nicki-card");
+        rapper = document.getElementById("nicki");
     }
     else if (yourSign == "Capricorn") {
-        rapper = document.querySelector(".mac-card");
+        rapper = document.getElementById("mac");
     }
-    rapper.classList.toggle("hidden"); 
+
+
+    rapper.classList.remove("hidden");
     divElement.innerHTML = `Birthday: ${month}/${day}/${year} <br> Your Sign: ${yourSign}`;
 
+    closeButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        rapper.classList.toggle("hidden");
+
+    });
     /*
     const currentYear = new Date().getFullYear();
     const year = inputYear;
@@ -193,3 +202,5 @@ function getYourSign(month, day, year) {
     return age;
     */
 }
+
+
