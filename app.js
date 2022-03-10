@@ -1,6 +1,11 @@
 const submitButton = document.querySelector(".js-submit-button");
 const divElement = document.querySelector("[data-content-area]");
-
+/*
+submitButton.addEventListener("click", function () { 
+    const submitButtonContent = document.querySelector(".jcole-card");
+    submitButtonContent.classList.toggle("hidden");
+  });
+  */
 submitButton.addEventListener("click", function (event) {
     event.preventDefault();
     const dateInput = document.querySelector(".js-date-input");
@@ -14,132 +19,172 @@ submitButton.addEventListener("click", function (event) {
 
 function getYourSign(month, day, year) {
     let yourSign;
-    if (month >= 3 && month <= 4) { /*Chance The Rapper (Aries)*/
+    if (month >= 3 && month <= 4) { /*Aries*/
         if (month == 3 && day < 21) { /*starting date*/
-            yourSign = "Tyler, the Creator (Pisces)" /*month before*/
+            yourSign = "Pisces" /*month before*/
         }
         else if (month == 4 && day > 19) { /*month after*/
-            yourSign = "Travis Scott (Taurus)"
+            yourSign = "Taurus"
         }
         else {
-            yourSign = "Chance The Rapper (Aries)" /*month of*/
+            yourSign = "Aries" /*month of*/
         }
     }
 
-    else if (month >= 4 && month <= 5) { /* Travis Scott (Taurus)*/
+    else if (month >= 4 && month <= 5) { /* Taurus*/
         if (month == 4 && day < 20) { /*starting date*/
-            yourSign= "Chance The Rapper (Aries)" /*month before*/
+            yourSign = "Aries" /*month before*/
         }
         else if (month == 5 && day > 20) { /*month after*/
-            yourSign = "Kanye West (Kanye West (Gemini))"
+            yourSign = "Gemini"
         }
         else {
-            yourSign = "Travis Scott (Taurus)" /*month of*/
+            yourSign = "Taurus" /*month of*/
         }
     }
-    else if (month >= 5 && month <= 6) { /* Kanye West (Gemini)*/
+    else if (month >= 5 && month <= 6) { /* Gemini*/
         if (month == 5 && day < 21) { /*starting date*/
-            yourSign = "Travis Scott (Taurus)" /*month before*/
+            yourSign = "Taurus" /*month before*/
         }
         else if (month == 6 && day > 20) { /*month after*/
-            yourSign = "Post Malone (Cancer)"
+            yourSign = "Cancer"
         }
         else {
-            yourSign = "Kanye West (Gemini)" /*month of*/
+            yourSign = "Gemini" /*month of*/
         }
     }
-    else if (month >= 6 && month <= 7) { /* Post Malone (Cancer)*/
+    else if (month >= 6 && month <= 7) { /* Cancer*/
         if (month == 6 && day < 21) { /*starting date*/
-            yourSign = "Kanye West (Gemini)" /*month before*/
+            yourSign = "Gemini" /*month before*/
         }
         else if (month == 7 && day > 22) { /*month after*/
-            yourSign = "Lil Uzi Vert (Leo)"
+            yourSign = "Leo"
         }
         else {
-            yourSign = "Post Malone (Cancer)" /*month of*/
+            yourSign = "Cancer" /*month of*/
         }
     }
-    else if (month >= 7 && month <= 8) { /* Lil Uzi Vert (Leo)*/
+    else if (month >= 7 && month <= 8) { /* Leo*/
         if (month == 7 && day < 23) { /*starting date*/
-            yourSign = "Post Malone (Cancer)" /*month before*/
+            yourSign = "Cancer" /*month before*/
         }
         else if (month == 7 && day > 22) { /*month after*/
-            yourSign = "Playboi Carti (Virgo)"
+            yourSign = "Virgo"
         }
         else {
-            yourSign = "Lil Uzi Vert (Leo)" /*month of*/
+            yourSign = "Leo" /*month of*/
         }
     }
-    else if (month >= 8 && month <= 9) { /* Playboi Carti (Virgo)*/
+    else if (month >= 8 && month <= 9) { /* Virgo*/
         if (month == 8 && day < 23) { /*starting date*/
-            yourSign = "Lil Uzi Vert (Leo)" /*month before*/
+            yourSign = "Leo" /*month before*/
         }
         else if (month == 7 && day > 22) { /*month after*/
-            yourSign = "A$AP Rocky (Libra)"
+            yourSign = "Libra"
         }
         else {
-            yourSign = "Playboi Carti (Virgo)" /*month of*/
+            yourSign = "Virgo" /*month of*/
         }
     }
-    else if (month >= 9 && month <= 10) { /* A$AP Rocky (Libra)*/
+    else if (month >= 9 && month <= 10) { /* Libra*/
         if (month == 9 && day < 23) { /*starting date*/
-            yourSign = "Playboi Carti (Virgo)" /*month before*/
+            yourSign = "Virgo" /*month before*/
         }
         else if (month == 7 && day > 22) { /*month after*/
-            yourSign = "Drake (Scorpio)"
+            yourSign = "Scorpio"
         }
         else {
-            yourSign = "A$AP Rocky (Libra)" /*month of*/
+            yourSign = "Libra" /*month of*/
         }
     }
-    else if (month >= 10 && month <= 11) { /* Drake (Scorpio)*/
+    else if (month >= 10 && month <= 11) { /* Scorpio*/
         if (month == 10 && day < 23) { /*starting date*/
-            yourSign = "A$AP Rocky (Libra)" /*month before*/
+            yourSign = "Libra" /*month before*/
         }
         else if (month == 11 && day > 21) { /*month after*/
-            yourSign = "Nicki Minaj (Sagittarius)"
+            yourSign = "Sagittarius"
         }
         else {
-            yourSign = "Drake (Scorpio)" /*month of*/
+            yourSign = "Scorpio" /*month of*/
         }
     }
-    else if (month >= 11 && month <= 12) { /* Nicki Minaj (Sagittarius)*/
+    else if (month >= 11 && month <= 12) { /* Sagittarius*/
         if (month == 11 && day < 22) { /*starting date*/
-            yourSign = "Drake (Scorpio)" /*month before*/
+            yourSign = "Scorpio" /*month before*/
         }
         else if (month == 12 && day > 21) { /*month after*/
-            yourSign = "Mac Miller (Capricorn)"
+            yourSign = "Capricorn"
         }
         else {
-            yourSign = "Nicki Minaj (Sagittarius)" /*month of*/
+            yourSign = "Sagittarius" /*month of*/
         }
     }
-    else if (month >= 12 && month <= 1) { /* Mac Miller (Capricorn)*/
+    else if (month >= 12 && month <= 1) { /* Capricorn*/
         if (month == 12 && day < 22) { /*starting date*/
-            yourSign = "Nicki Minaj (Sagittarius)" /*month before*/
+            yourSign = "Sagittarius" /*month before*/
         }
         else if (month == 1 && day > 19) { /*month after*/
-            yourSign = "J. Cole (Aquarius)"
+            yourSign = "Aquarius"
         }
         else {
-            yourSign = "Mac Miller (Capricorn)" /*month of*/
+            yourSign = "Capricorn" /*month of*/
         }
     }
     else if (month >= 1 && month <= 2) { /* Aquarius*/
         if (month == 1 && day < 20) { /*starting date*/
-            yourSign = "Mac Miller (Capricorn)" /*month before*/
+            yourSign = "Capricorn" /*month before*/
         }
         else if (month == 2 && day > 18) { /*month after*/
-            yourSign = "Tyler, the Creator (Pisces)"
+            yourSign = "Pisces"
         }
         else {
-            yourSign = "J. Cole (Aquarius)" /*month of*/
+            yourSign = "Aquarius" /*month of*/
         }
     }
     else {
-        yourSign = "Tyler, the Creator (Pisces)"
+        yourSign = "Pisces"
     }
-divElement.innerHTML = `Birthday: ${month}/${day}/${year} <br> Your Sign: ${yourSign}`; 
+
+    var rapper;
+    if (yourSign == "Aquarius") {
+        rapper = document.querySelector(".jcole-card");
+    }
+    else if (yourSign == "Pisces") {
+        rapper = document.querySelector(".tyler-card");
+    }
+    else if (yourSign == "Aries") {
+        rapper = document.querySelector(".chance-card");
+    }
+    else if (yourSign == "Taurus") {
+        rapper = document.querySelector(".travis-card");
+    }
+    else if (yourSign == "Gemini") {
+        rapper = document.querySelector(".kanye-card");
+    }
+    else if (yourSign == "Cancer") {
+        rapper = document.getElementById("post");
+        console.log(rapper);
+    }
+    else if (yourSign == "Leo") {
+        rapper = document.querySelector(".uzi-card");
+    }
+    else if (yourSign == "Virgo") {
+        rapper = document.querySelector(".carti-card");
+    }
+    else if (yourSign == "Libra") {
+        rapper = document.querySelector(".rocky-card");
+    }
+    else if (yourSign == "Scorpio") {
+        rapper = document.querySelector(".drake-card");
+    }
+    else if (yourSign == "Sagittarius") {
+        rapper = document.querySelector(".nicki-card");
+    }
+    else if (yourSign == "Capricorn") {
+        rapper = document.querySelector(".mac-card");
+    }
+    rapper.classList.toggle("hidden"); 
+    divElement.innerHTML = `Birthday: ${month}/${day}/${year} <br> Your Sign: ${yourSign}`;
 
     /*
     const currentYear = new Date().getFullYear();
