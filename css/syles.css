@@ -130,7 +130,7 @@ color: var(--bg-two);
     display: block;
     margin: auto;
 }
-.jcole-card, .tyler-card, .chance-card, .travis-card, .kanye-card, .post-card, .uzi-card, .carti-card, .rocky-card, .drake-card, .nicki-card, .mac-card {
+.jcole-card, .tyler-card, .chance-card, .travis-card, .kanye-card, .post-card, .uzi-card, .carti-card, .rocky-card, .drake-card, .nicki-card, .mac-card, .question-card {
     background-color: #fff;
     position: fixed;
     max-height: 90vh;
@@ -147,6 +147,12 @@ color: var(--bg-two);
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.imagein {
+    height: 300px;
+    width: 400px;
+    padding: 1rem;
+}
+
 
 .hidden {
     display: none;
@@ -160,12 +166,45 @@ color: var(--bg-two);
     font-family: 'lexend';
     color: var(--bg-three);
     line-height: 30px;
+    padding: 1rem;
 }
 
-.tyle-card {
-    padding: 5rem;
+.question-button {
+    font-family: 'lexend';
+    color: white;
+    background:var(--bg-two);
+    border-radius: 5px;
+    padding: .3rem;
+    display: block;
+    margin: left;
+}
+.questionstuff {
+    padding: 1rem;
+}
+.rap {
+    font-family: 'lexend';
+    color: white;
+    background:var(--bg-two);
+    border-radius: 5px;
+    padding: .5rem;
     display: block;
     margin: auto;
-    width: 300px;
-    height: auto;
+}
+.rap {
+    transition: all .2s ease-in-out; 
+}
+.rap:hover {
+    transform: scale(1.1);
+}
+.js-submit-button {
+    transition: all .2s ease-in-out;
+}
+.js-submit-button:hover {
+    transform: scale(1.1);
+}
+.question-button {
+    transition: all .2s ease-in-out;
+}
+.question-button:hover {
+    transform: scale(1.1);
 }

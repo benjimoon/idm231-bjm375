@@ -10,12 +10,15 @@
 </head>
 
 <body>
+<div class= "questionstuff">
+<button class="question-button" type="button">Question?</button>
+</div>
     <div class="wrapper">
         <div class="title_stuff">
-            <h1 class="title"> Rapper Zodiac</h1>
+            <h1 class="title"> The Rapper Zodiac</h1>
             <p class="title_desc"> Enter your birthday to find out which rapper you're most similar to!</p>
         </div>
-        <form action="" class="birthday">
+        <form class="birthday">
             <label for="birthdayInput" class="bday_text"> Enter Your
                 Birthday:</label>
             <input id="birthdayInput" class="js-date-input" type="date" name="birthday">
@@ -23,140 +26,198 @@
         </form>
         <div class="jcole">
             <div class="box">
-                <img src="graphics/jcole.jpg">
+                <img src="graphics/jcole.jpg" alt="jcole-img"/>
+                <button class="learn-more1 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="tyler">
             <div class="box">
-                <img src="graphics/tyler.jpeg" />
+                <img src="graphics/tyler.jpeg" alt="tyler-img"/>
+                <button class="learn-more2 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="chance">
             <div class="box">
-                <img src="graphics/chance.jpeg" />
+                <img src="graphics/chance.jpeg" alt="chance-img"/>
+                <button class="learn-more3 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="travis">
             <div class="box">
-                <img src="graphics/travis.jpeg" />
+                <img src="graphics/travis.jpeg" alt="travis-img"/>
+                <button class="learn-more4 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="kanye">
             <div class="box">
-                <img src="graphics/kanye.jpeg" />
+                <img src="graphics/kanye.jpeg" alt="kanye-img"/>
+                <button class="learn-more5 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="post">
             <div class="box">
-                <img src="graphics/post.jpeg">
+                <img src="graphics/post.jpeg" alt="post-img">
+                <button class="learn-more6 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="uzi">
             <div class="box">
-                <img src="graphics/uzi.jpeg" />
+                <img src="graphics/uzi.jpeg" alt="uzi-img" />
+                <button class="learn-more7 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="carti">
             <div class="box">
-                <img src="graphics/carti.jpeg" />
+                <img src="graphics/carti.jpeg" alt="carti-img" />
+                <button class="learn-more8 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="rocky">
             <div class="box">
-                <img src="graphics/rocky.jpeg" />
+                <img src="graphics/rocky.jpeg" alt="rocky-img" />
+                <button class="learn-more9 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="drake">
             <div class="box">
-                <img src="graphics/drake.jpeg" />
+                <img src="graphics/drake.jpeg" alt="drake-img" />
+                <button class="learn-more10 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="nicki">
             <div class="box">
-                <img src="graphics/nicki.jpeg" />
+                <img src="graphics/nicki.jpeg" alt="nicki-img"/>
+                <button class="learn-more11 rap" type="button"> Learn More</button>
             </div>
         </div>
         <div class="mac">
             <div class="box">
-                <img src="graphics/mac.jpeg" />
+                <img src="graphics/mac.jpeg" alt="mac-img" />
+                <button class="learn-more12 rap" type="button"> Learn More</button>
             </div>
         </div>
     </div>
-
-    <div class="jcole-card hidden" id="jcole">
+    <div class="question-card hidden allcards">
+        <h2 class="hover_title"> Need Help?</h2>
+        <p class="hover_desc"> To find out what rapper you are, input your birth date and press the submit button!</p>
+        <button class="close-card">X</button>
+    </div>
+    <div class="jcole-card hidden allcards" id="jcole">
+        <audio id="audio-jcole" src="audio/jcole.mp3" > </audio>
         <h2 class="hover_title"> You're like J. Cole!</h2>
         <p class="hover_desc"> You are very attractive and charming. You can be known as entrepreneurial and
             progressive. Although, your strong, ambitious and determined behavior can turn into stubbornness. </p>
-            <button class="close-card">Close</button>
+        <img class="imagein" src="graphics/jcole.jpg" alt="jcole-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="tyler-card hidden" id="tyler">
+    <div class="tyler-card hidden allcards" id="tyler">
+        <audio id="audio-tyler" src="audio/tyler.mp3"> </audio>
         <h2 class="hover_title"> You're like Tyler, the Creator!</h2>
-        <p class="hover_desc"> You are a true free spirit! You are a very lively and energetic person but also have a deeper side that looks for meaningful connections with others.
+        <p class="hover_desc"> You are a true free spirit! You are a very lively and energetic person but also have a
+            deeper side that looks for meaningful connections with others.
         </p>
-        <button class="close-card">Close</button>
+        <img class="imagein" src="graphics/tyler.jpeg" alt="tyler-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="chance-card hidden" id="chance">
+    <div class="chance-card hidden allcards" id="chance">
         <h2 class="hover_title"> You're like Chance The Rapper! </h2>
-        <p class="hover_desc"> You are very compassionate and seek to be of help to other people. You are a person who will frequently be there for friends and family when they need a shoulder to cry on. Although, you tend to trust people too much.</p>
-        <button class="close-card">Close</button>
+        <audio id="audio-chance" src="audio/chance.mp3" > </audio>
+        <p class="hover_desc"> You are very compassionate and seek to be of help to other people. You are a person who
+            will frequently be there for friends and family when they need a shoulder to cry on. Although, you tend to
+            trust people too much.</p>
+        <img class="imagein" src="graphics/chance.jpeg" alt="chance-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="travis-card hidden" id="travis">
+    <div class="travis-card hidden allcards" id="travis">
         <h2 class="hover_title"> You're like Travis Scott! </h2>
-        <p class="hover_desc"> You are a very big-hearted person! You are one to take big opportunities that you are interested in and when presented to you. You also desire the extravagant and great things in life. </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-travis" src="audio/travis.mp3" > </audio>
+        <p class="hover_desc"> You are a very big-hearted person! You are one to take big opportunities that you are
+            interested in and when presented to you. You also desire the extravagant and great things in life. </p>
+        <img class="imagein" src="graphics/travis.jpeg" alt="travis-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="kanye-card hidden" id="kanye">
+    <div class="kanye-card hidden allcards" id="kanye">
         <h2 class="hover_title"> You're like Kanye West! </h2>
-        <p class="hover_desc"> You crave deeper connections with people and find superficial conversations a waste of time. You would much rather prefer to talk about life motivations, inspirations and dreams.  </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-kanye" src="audio/kanye.mp3" > </audio>
+        <p class="hover_desc"> You crave deeper connections with people and find superficial conversations a waste of
+            time. You would much rather prefer to talk about life motivations, inspirations and dreams. </p>
+        <img class="imagein" src="graphics/kanye.jpeg" alt="kanye-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="post-card hidden" id="post">
+    <div class="post-card hidden allcards" id="post">
         <h2 class="hover_title"> You're like Post Malone! </h2>
-        <p class="hover_desc"> You are naturally a leader and have the capacity to accumulate lots of money! You have a great talent for management, specifically in business and financial matters. </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-post" src="audio/post.mp3" > </audio>
+        <p class="hover_desc"> You are naturally a leader and have the capacity to accumulate lots of money! You have a
+            great talent for management, specifically in business and financial matters. </p>
+        <img class="imagein" src="graphics/post.jpeg" alt="post-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="uzi-card hidden" id="uzi">
+    <div class="uzi-card hidden allcards" id="uzi">
         <h2 class="hover_title"> You're like Lil Uzi Vert! </h2>
-        <p class="hover_desc"> You are very goofy and definitely the class clown. At the same time, you enjoy working alone and you need your space and privacy. You enjoy displaying your knowledge and wit, which makes you attractive to others. </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-uzi" src="audio/uzi.mp3" > </audio>
+        <p class="hover_desc"> You are very goofy and definitely the class clown. At the same time, you enjoy working
+            alone and you need your space and privacy. You enjoy displaying your knowledge and wit, which makes you
+            attractive to others. </p>
+        <img class="imagein" src="graphics/uzi.jpeg" alt="uzi-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="carti-card hidden" id="carti">
+    <div class="carti-card hidden allcards" id="carti">
         <h2 class="hover_title"> You're like Playboi Carti!</h2>
-        <p class="hover_desc"> You are a peacemaker at heart. You have the soul of an artist. You are extremely sensitive, perceptive, and shy at the same time. You have an eye for beauty and a good sense of rhythm. </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-carti" src="audio/carti.mp3" > </audio>
+        <p class="hover_desc"> You are a peacemaker at heart. You have the soul of an artist. You are extremely
+            sensitive, perceptive, and shy at the same time. You have an eye for beauty and a good sense of rhythm. </p>
+        <img class="imagein" src="graphics/carti.jpeg" alt="carti-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="rocky-card hidden" id="rocky">
+    <div class="rocky-card hidden allcards" id="rocky">
         <h2 class="hover_title"> You're like A$AP Rocky! </h2>
-        <p class="hover_desc"> You can be the life of the party and the center of attention. You uplift others and can be an amazing inspiration to others! You are a social butterfly, but still can be emotional and vulnerable when hurt. </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-rocky" src="audio/rocky.mp3" > </audio>
+        <p class="hover_desc"> You can be the life of the party and the center of attention. You uplift others and can
+            be an amazing inspiration to others! You are a social butterfly, but still can be emotional and vulnerable
+            when hurt. </p>
+        <img class="imagein" src="graphics/rocky.jpeg" alt="rocky-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="drake-card hidden" id="drake">
+    <div class="drake-card hidden allcards" id="drake">
         <h2 class="hover_title"> You're like Drake! </h2>
-        <p class="hover_desc"> You are organized and controlled, making you very good at problem solving. You have great potential for success, but only after you overcome the limitations you often encounter. You are courageous and a hard worker. </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-drake" src="audio/drake.mp3" > </audio>
+        <p class="hover_desc"> You are organized and controlled, making you very good at problem solving. You have great
+            potential for success, but only after you overcome the limitations you often encounter. You are courageous
+            and a hard worker. </p>
+        <img class="imagein" src="graphics/drake.jpeg" alt="drake-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="nicki-card hidden" id="nicki">
+    <div class="nicki-card hidden allcards" id="nicki">
         <h2 class="hover_title"> You're like Nicki Minaj! </h2>
-        <p class="hover_desc"> You work well with others, but it is important that you put your responsibilities first, because you perform better when your responsibilities aren’t overlapping with others. You are also loyal to the ones you love!</p>
-        <button class="close-card">Close</button>
+        <audio id="audio-nicki" src="audio/nicki.mp3" > </audio>
+        <p class="hover_desc"> You work well with others, but it is important that you put your responsibilities first,
+            because you perform better when your responsibilities aren’t overlapping with others. You are also loyal to
+            the ones you love!</p>
+        <img class="imagein" src="graphics/nicki.jpeg" alt="nicki-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
-    <div class="mac-card hidden" id="mac">
+    <div class="mac-card hidden allcards" id="mac">
         <h2 class="hover_title"> You're like Mac Miller!</h2>
-        <p class="hover_desc"> You are a free soul. You love to travel, adventure, and meet new people! You also love to be involved in several different things at the same time. You have an upbeat and inspiring personality, which helps you make friends easily! </p>
-        <button class="close-card">Close</button>
+        <audio id="audio-mac" src="audio/mac.mp3" > </audio>
+        <p class="hover_desc"> You are a free soul. You love to travel, adventure, and meet new people! You also love to
+            be involved in several different things at the same time. You have an upbeat and inspiring personality,
+            which helps you make friends easily! </p>
+        <img class="imagein" src="graphics/mac.jpeg" alt="mac-img-card">
         <div class="sign" data-content-area></div>
+        <button class="close-card">X</button>
     </div>
+    <audio id="speakers"></audio>
     <script src="app.js"></script>
 </body>
 
